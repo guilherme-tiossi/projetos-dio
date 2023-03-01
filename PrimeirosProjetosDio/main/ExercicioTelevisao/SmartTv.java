@@ -22,9 +22,37 @@ public class SmartTv{
 
     public void lerComandos(){
         String botao = sc.nextLine();
-        Integer.parseInt(botao);
         
-        System.out.println(botao);
+        if(isParseable(botao)){
+            this.canal = Integer.parseInt(botao); 
+        }
+        else{
+            switch (botao){
+                case "+":
+                    this.mudarVolume(botao.charAt(0));
+                break;
+
+                case "-":
+                    this.mudarVolume(botao.charAt(0));
+                break;
+
+                case ">":
+                    this.mudarCanal(botao.charAt(0));
+                break;
+
+                case  "<":
+                    this.mudarCanal(botao.charAt(0));
+                break;
+
+                case "":
+                    this.ligarDesligar();
+                break;
+
+                default:
+                    System.out.println("Comando inválido.");
+                break;
+            }
+        }
     }
 
     public String ligarDesligar(){
@@ -56,6 +84,15 @@ public class SmartTv{
         }
         else{
             canal = bt;
+        }
+    }
+
+    public static boolean isParseable(String input){
+        try {
+            Integer.parseInt(input);
+            return true;
+        } catch (final NumberFormatException e) {
+            return false;
         }
     }
 }
