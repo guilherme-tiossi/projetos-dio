@@ -22,9 +22,7 @@ public class SmartTv{
 
     public void lerComandos(){
         String botao = sc.nextLine();
-        if(Integer.parseInt(botao) == Integer){
-
-        }
+        Integer.parseInt(botao);
         
         System.out.println(botao);
     }
