@@ -1,6 +1,6 @@
-package main.CalculadoraTeste;
+package ExercicioCalculadora;
 import java.util.Scanner;
-public class App {
+public class Calculadora {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite uma operação (+, -, * ou / apenas)");

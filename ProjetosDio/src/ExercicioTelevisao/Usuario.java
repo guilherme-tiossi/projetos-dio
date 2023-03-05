@@ -1,4 +1,4 @@
-package main.ExercicioTelevisao;
+package ExercicioTelevisao;
 
 public class Usuario {
     public static void main(String[] args){
@@ -7,6 +7,5 @@ public class Usuario {
         televisao.exibirInformacoes();
         televisao.lerComandos();
         }
-
     }
 }

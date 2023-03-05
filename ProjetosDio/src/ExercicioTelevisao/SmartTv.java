@@ -1,4 +1,4 @@
-package main.ExercicioTelevisao;
+package ExercicioTelevisao;
 import java.util.Scanner;
 
 public class SmartTv{
