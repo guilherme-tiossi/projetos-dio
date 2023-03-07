@@ -1,6 +1,6 @@
 package EstudoPilhas;
 public class Pilha {
-    private No refNoEntradaPilha; //variavel utilizada para manipular o valor do topo da pilha
+    private No refNoEntradaPilha; //variavel utilizada para armazenar a referencia do nó do topo da pilha
     
     public Pilha(){
         this.refNoEntradaPilha = null;
