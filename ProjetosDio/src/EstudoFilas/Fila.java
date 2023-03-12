@@ -17,7 +17,7 @@ public class Fila<T> {
                     break;
                 }
             }
-            return (T) primeiroNo.getObject();
+            return (T) primeiroNo.getDado();
         }
         return null;
     }
@@ -41,7 +41,7 @@ public class Fila<T> {
                     break;
                 }
             }
-            return primeiroNo.getObject();
+            return primeiroNo.getDado();
         }
         return null;
     }
@@ -61,7 +61,7 @@ public class Fila<T> {
 
         while(true){
             if(noAuxiliar != null){
-                stringRetorno += "No{" + "dado=" + noAuxiliar.getObject() + "}\n";
+                stringRetorno += "No{" + "dado=" + noAuxiliar.getDado() + "}\n";
                 noAuxiliar = noAuxiliar.getRefNo();//recebe o valor do próximo nó da pilha
                                                    //enquanto existir próximo nó
             }else{

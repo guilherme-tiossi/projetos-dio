@@ -1,4 +1,4 @@
-package EstudosNos;
+package EstudoNos;
 public class No<T>{
     private T conteudo;
     private No<T> proximoNo;

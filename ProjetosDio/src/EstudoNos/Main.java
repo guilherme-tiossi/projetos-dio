@@ -1,4 +1,4 @@
-package EstudosNos;
+package EstudoNos;
 public class Main {
     public static void main(String[] args){
         No<Integer> no1 = new No("Conteúdo no1");

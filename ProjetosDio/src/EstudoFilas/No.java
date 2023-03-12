@@ -1,18 +1,18 @@
 package EstudoFilas;
 
-public class No<T> {
+public class No<T>{
     private T dado;
-    private No<T> refNo;
+    private No<T> refNo; 
 
     public No(T obj){
         this.dado = obj;
     }
 
-    public T getObject(){
+    public T getDado(){
         return dado;
     }
 
-    public void setObject(T newDado){
+    public void setDado(T newDado){
         this.dado = newDado;
     }
 
@@ -26,6 +26,7 @@ public class No<T> {
 
     @Override
     public String toString(){
-        return "No{dado=" + dado + '}';
+    return "Nó{dado = "+dado+"\n    refNo = "+refNo+"}";
     }
+
 }
